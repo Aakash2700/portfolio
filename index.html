@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakash Srivastava | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #1e293b;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .progress {
+      background-color: #e2e8f0;
+    }
+    .progress-bar {
+      height: 100%;
+      transition: width 0.3s ease-in-out;
+    }
+    .java { background-color: #f59e0b; width: 95%; }
+    .cpp { background-color: #3b82f6; width: 85%; }
+    .c { background-color: #6366f1; width: 80%; }
+    .htmlcss { background-color: #10b981; width: 85%; }
+    .js { background-color: #ef4444; width: 75%; }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn ease-in 1s forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .intro-fade {
+      opacity: 0;
+      animation: introFade 1.5s ease forwards;
+    }
+    @keyframes introFade {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="p-6">
+  <!-- Header -->
+  <header class="text-center mb-12 intro-fade">
+    <h1 class="text-4xl font-bold">Aakash Srivastava</h1>
+    <p class="text-lg text-blue-600">Aspiring Developer & CSE Student @ VIT-AP</p>
+    <div class="mt-4">
+      <img id="header-gif" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif" alt="Coding Fun" class="mx-auto w-64 h-64 rounded">
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="mb-12 max-w-3xl mx-auto fade-in">
+    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+    <p class="text-gray-700">
+      Hi! I'm Aakash, a passionate computer science student currently pursuing my B.Tech in CSE from VIT-AP University.
+      I love building useful web applications and diving into the world of machine learning. Constantly learning, I’m
+      enthusiastic about solving real-world problems using code.
+    </p>
+    <div class="mt-6">
+      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Dev Animation" class="mx-auto w-32 h-32 rounded">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="mb-12 max-w-3xl mx-auto fade-in">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <div class="space-y-4">
+      <div>
+        <p>Java</p>
+        <div class="progress h-4 rounded overflow-hidden">
+          <div class="progress-bar java"></div>
+        </div>
+      </div>
+      <div>
+        <p>C++</p>
+        <div class="progress h-4 rounded overflow-hidden">
+          <div class="progress-bar cpp"></div>
+        </div>
+      </div>
+      <div>
+        <p>C</p>
+        <div class="progress h-4 rounded overflow-hidden">
+          <div class="progress-bar c"></div>
+        </div>
+      </div>
+      <div>
+        <p>HTML & CSS</p>
+        <div class="progress h-4 rounded overflow-hidden">
+          <div class="progress-bar htmlcss"></div>
+        </div>
+      </div>
+      <div>
+        <p>JavaScript</p>
+        <div class="progress h-4 rounded overflow-hidden">
+          <div class="progress-bar js"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="mb-12 max-w-3xl mx-auto fade-in">
+    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+    <div class="bg-gray-100 p-4 rounded shadow">
+      <h3 class="text-xl font-bold text-blue-600">Personal Finance Management System</h3>
+      <p class="text-gray-800">A full-featured web application designed to help users manage and track their personal finances effectively. It includes income tracking, expense management, and analytics.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="max-w-3xl mx-auto fade-in">
+    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+    <p>Email: <a class="text-blue-600" href="mailto:aakash0562004@gmail.com">aakash0562004@gmail.com</a></p>
+    <p>GitHub: [Link to be added]</p>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 mt-16 fade-in">
+    &copy; 2025 Aakash Srivastava. All rights reserved.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+  </script>
+</body>
+
+</html>
